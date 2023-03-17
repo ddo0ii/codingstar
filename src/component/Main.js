@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Main({ name, color }) {
   return (
@@ -9,5 +10,9 @@ function Main({ name, color }) {
     </div>
   );
 }
+
+Main.propTypes = {
+  name: PropTypes.string,
+};
 
 export default Main;
