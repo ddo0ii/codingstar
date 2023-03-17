@@ -1,11 +1,11 @@
 import React from "react";
 
-function Wrapper(props) {
+function Wrapper({ children }) {
   const style = {
     backgroundColor: "yellow",
   };
 
-  return <div style={style}>{props.children}</div>;
+  return <div style={style}>{children}</div>;
 }
 
 export default Wrapper;
