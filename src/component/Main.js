@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Main extends Component {
-  render() {
-    return (
-      <div>
-        <main>
-          <h1>안녕하세요. 권소영입니다.</h1>
-        </main>
-      </div>
-    );
-  }
+function Main(props) {
+  return (
+    <div>
+      <main>
+        <h1>안녕하세요. {props.name} 입니다.</h1>
+      </main>
+    </div>
+  );
 }
 
 export default Main;
