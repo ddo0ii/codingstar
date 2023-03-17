@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"; //프로퍼티 타입을 지정해주기 위해 사용
 
 function Main({ name, color }) {
   return (
@@ -11,14 +11,9 @@ function Main({ name, color }) {
   );
 }
 
-// 프로퍼티 타입 지정
+// 프로퍼티 타입 지정 및 필수값 설정
 Main.propTypes = {
-  name: PropTypes.string,
-};
-
-// 프로퍼티 기본 값 지정
-Main.defaultProps = {
-  name: "디폴트",
+  name: PropTypes.string.isRequired,
 };
 
 export default Main;
