@@ -11,8 +11,14 @@ function Main({ name, color }) {
   );
 }
 
+// 프로퍼티 타입 지정
 Main.propTypes = {
   name: PropTypes.string,
+};
+
+// 프로퍼티 기본 값 지정
+Main.defaultProps = {
+  name: "디폴트",
 };
 
 export default Main;
