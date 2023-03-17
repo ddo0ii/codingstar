@@ -8,7 +8,8 @@ function App() {
     <div>
       <Header />
       <Wrapper>
-        <Main color="blue" />
+        <Main name="권소영" color="blue" />
+        <Main name="소영이" color="green" />
       </Wrapper>
       <Footer />
     </div>
