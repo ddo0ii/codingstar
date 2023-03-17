@@ -1,7 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Footer(props) {
-  return <div>푸터입니다.</div>;
+class Footer extends Component {
+  render() {
+    return (
+      <div>
+        <footer>
+          <h1>푸터입니다.</h1>
+        </footer>
+      </div>
+    );
+  }
 }
 
 export default Footer;

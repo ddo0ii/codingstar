@@ -1,7 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Header(props) {
-  return <div>헤더입니다.</div>;
+class Header extends Component {
+  render() {
+    return (
+      <div>
+        <header>
+          <h1>헤더입니다.</h1>
+        </header>
+      </div>
+    );
+  }
 }
-
 export default Header;
