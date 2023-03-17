@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Main name="권소영" />
+      <Main name="권소영" color="blue" />
       <Footer />
     </div>
   );
