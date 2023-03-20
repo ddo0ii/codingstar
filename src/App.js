@@ -9,7 +9,6 @@ function App() {
       <Header />
       <Wrapper>
         <Main name="권소영" color="blue" />
-        <Main name="소영이" color="green" />
       </Wrapper>
       <Footer />
     </div>
