@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 
 const Main = () => {
-  // let myName = "KwonSoYeong"; // useState를 사용하여 변경
-  const [myName, setMyName] = useState("KwonSoYeong");
-
-  function changeName() {
-    // myName = myName === "KwonSoYeong" ? "KimSoYeong" : "KwonSoYeong";
-    // console.log(myName);
-    // document.getElementById("name").innerText = myName;
-    setMyName(myName === "KwonSoYeong" ? "KimSoYeong" : "KwonSoYeong");
-  }
-
+  const [cnt, setCnt] = useState(0);
+  const updateCnt = () => setCnt(cnt + 1);
+  const clearCnt = () => setCnt(0);
   return (
     <div>
-      <h1>안녕하세요. {myName} 입니다.</h1>
-      <button onClick={changeName}>Change</button>
+      클릭한 횟수는 {cnt}번 입니다.
+      <div>
+        <button onClick={updateCnt}>클릭해 보세요!</button>
+        <button onClick={clearCnt}>초기화 하기</button>
+      </div>
     </div>
   );
 };
