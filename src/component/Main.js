@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 
 const Main = () => {
-  const [cnt, setCnt] = useState(0);
-  // const updateCnt = () => setCnt(cnt + 1);
-  // const clearCnt = () => setCnt(0);
+  const [myName, setMyName] = useState("KwonSoYeong");
+  function changeName() {
+    setMyName(myName === "KwonSoYeong" ? "KimSoYeong" : "KwonSoYeong");
+  }
   return (
     <div>
-      클릭한 횟수는 {cnt}번입니다.
-      <div>
-        <button onClick={() => setCnt((prevCnt) => prevCnt + 1)}>
-          클릭해 보세요!
-        </button>
-        <button onClick={() => setCnt(0)}>초기화 하기</button>
-      </div>
+      <h1>안녕하세요 {myName}</h1>
+      <button onClick={changeName}>Change</button>
     </div>
   );
 };
