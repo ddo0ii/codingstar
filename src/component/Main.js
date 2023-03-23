@@ -1,15 +1,12 @@
 import React from "react";
-import dummy from "../db/data.json";
 
-const Main = (props) => {
+const Main = () => {
   return (
-    <div>
-      {dummy.users.map((user) => (
-        <h3 key={user.userName}>
-          안녕하세요. {user.userName}({user.age}) 입니다.
-        </h3>
-      ))}
-    </div>
+    <>
+      <h3 style={{ color: "yellow", backgroundColor: "black" }}>
+        안녕하세요. 권소영입니다.
+      </h3>
+    </>
   );
 };
 export default Main;
