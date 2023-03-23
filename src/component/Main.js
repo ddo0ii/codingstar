@@ -2,16 +2,15 @@ import React, { useState } from "react";
 
 const Main = () => {
   const [myName, setMyName] = useState("KwonSoYeong");
+  function changName() {
+    setMyName(myName === "KwonSoYeong" ? "KimSoYeong" : "KwonSoYeong");
+  }
   return (
     <div>
       <h1>안녕하세요 {myName}</h1>
-      <button
-        onClick={() => {
-          setMyName(myName === "KwonSoYeong" ? "KimSoYeong" : "KwonSoYeong");
-        }}
-      >
+      <a href="alert(1)" onClick={changName}>
         Change
-      </button>
+      </a>
     </div>
   );
 };
