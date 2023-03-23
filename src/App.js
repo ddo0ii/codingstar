@@ -3,11 +3,11 @@ import Main from "./component/Main";
 
 const App = () => {
   const names = [
-    ["권소영", 19],
-    ["김소영", 17],
-    ["나소영", 12],
+    { userName: "권소영", age: 19 },
+    { userName: "김소영", age: 17 },
+    { userName: "나소영", age: 12 },
   ];
-  const nameList = names.map((v) => <Main name={v[0]} age={v[1]} />);
+  const nameList = names.map((v) => <Main name={v.userName} age={v.age} />);
   return <div>{nameList}</div>;
 };
 
