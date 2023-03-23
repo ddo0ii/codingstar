@@ -7,9 +7,9 @@ const App = () => {
     { userName: "김소영", age: 28 },
     { userName: "나소영", age: 36 },
   ];
-  // const로 선언하면안된다! >> let으로 선언하자!
-  let nameList = names.filter((v) => v.age < 30);
-  nameList = nameList.map((v) => <Main name={v.userName} age={v.age} />);
+  const nameList = names.map((v) => (
+    <Main key={v.userName} name={v.userName} age={v.age} />
+  ));
 
   return <div>{nameList}</div>;
 };
