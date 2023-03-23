@@ -1,0 +1,7 @@
+{
+    "users" : [
+        { "userName": "권소영", "age": 19 },
+        { "userName": "김소영", "age": 28 },
+        { "userName": "나소영", "age": 36 }  
+    ]
+}
