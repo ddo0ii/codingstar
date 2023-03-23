@@ -3,16 +3,11 @@ import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Main from "./component/Main";
 import Wrapper from "./component/Wrapper";
-function App() {
-  return (
-    <div>
-      <Header />
-      <Wrapper>
-        <Main name="권소영" color="blue" />
-      </Wrapper>
-      <Footer />
-    </div>
-  );
-}
+
+const App = () => {
+  const names = ["권소영", "김소영", "나소영"];
+  const nameList = names.map((name) => <Main name={name} />);
+  return <div>{nameList}</div>;
+};
 
 export default App;

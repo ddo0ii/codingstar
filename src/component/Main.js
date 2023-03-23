@@ -1,19 +1,9 @@
-import React, { useState } from "react";
-
-const Main = () => {
-  const [myName, setMyName] = useState("KwonSoYeong");
-  function changName(e) {
-    e.preventDefault();
-    setMyName(myName === "KwonSoYeong" ? "KimSoYeong" : "KwonSoYeong");
-  }
+import React from "react";
+const Main = (props) => {
   return (
     <div>
-      <h1>안녕하세요 {myName}</h1>
-      <a href="#" onClick={changName}>
-        Change
-      </a>
+      <h3>안녕하세요. {props.name} 입니다.</h3>
     </div>
   );
 };
-
 export default Main;
