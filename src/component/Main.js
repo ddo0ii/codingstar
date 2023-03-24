@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Main.module.css";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <>
-      <h3 className={styles.nameBox}>안녕하세요. 권소영입니다.</h3>
+      <h3>안녕하세요. 메인페이지입니다.</h3>
     </>
   );
 };
+
 export default Main;

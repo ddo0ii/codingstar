@@ -1,12 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./component/Header";
 import Main from "./component/Main";
-import styles from "./App.module.css";
+import Product from "./component/Product";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
+      <Header />
       <Main />
-      <h3 className={styles.nameBox}>안녕하세요. 권소영입니다.</h3>
+      <Product />
     </div>
   );
 };
