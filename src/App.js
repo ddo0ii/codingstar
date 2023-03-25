@@ -4,6 +4,7 @@ import Header from "./component/Header";
 import Main from "./component/Main";
 import NotFound from "./component/NotFound";
 import Product from "./component/Product";
+import UseEffectTest from "./hooks/UseEffectTest";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
+      <UseEffectTest />
     </div>
   );
 };
