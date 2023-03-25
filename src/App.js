@@ -6,12 +6,14 @@ import NotFound from "./component/NotFound";
 import Product from "./component/Product";
 import UseEffectTest from "./hooks/UseEffectTest";
 import UseReducerTest from "./hooks/UseReducerTest";
+import UseReducerTestInit from "./hooks/UseReducerTestInit";
 
 const App = () => {
   return (
     <div className="App">
       <UseEffectTest />
       <UseReducerTest />
+      <UseReducerTestInit />
       <BrowserRouter>
         <Header />
         <Routes>
