@@ -1,20 +1,18 @@
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 // sample url : http://localhost:3000/product/1?search=productName&q=demo#test
 const Product = () => {
   const productId = useParams().productId;
-  const location = useLocation();
-
+  const [searchParams, setSearchParams] = useSearchParams();
+  const keyWords = searchParams; // 얘는 에러남..ㅠ
+  const keyWord = searchParams.get("search");
   return (
     <>
       <h3>{productId}번 상품 페이지 입니다.</h3>
       <ul>
-        <li>hash : {location.hash}</li>
-        <li>pathname : {location.pathname}</li>
-        <li>search : {location.search}</li>
-        <li>state : {location.state}</li>
-        <li>key : {location.key}</li>
+        <li>keyWords: {keyWords}</li>
+        <li>keyWord: {keyWord}</li>
       </ul>
     </>
   );
