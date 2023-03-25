@@ -20,6 +20,7 @@ function UseEffectTest() {
 
   return (
     <div>
+      <h1>UseEffectTest</h1>
       <p>안녕하세요. {name} 입니다.</p>
       <input onChange={handleChangeName} />
       <p>{count}번 클릭!</p>

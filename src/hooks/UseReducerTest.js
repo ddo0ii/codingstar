@@ -17,6 +17,7 @@ const UseReducerTest = () => {
 
   return (
     <>
+      <h1>UseReducerTest</h1>
       <h2>{state.count}</h2>
       <button onClick={() => dispatch({ type: "INCREMENT", payload: 1 })}>
         증가
