@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
 
+// sample url : http://localhost:3000/product/1?search=productName&q=demo#test
 const Product = () => {
   const productId = useParams().productId;
   const location = useLocation();
