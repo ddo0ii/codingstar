@@ -5,10 +5,13 @@ import Main from "./component/Main";
 import NotFound from "./component/NotFound";
 import Product from "./component/Product";
 import UseEffectTest from "./hooks/UseEffectTest";
+import UseReducerTest from "./hooks/UseReducerTest";
 
 const App = () => {
   return (
     <div className="App">
+      <UseEffectTest />
+      <UseReducerTest />
       <BrowserRouter>
         <Header />
         <Routes>
@@ -18,7 +21,6 @@ const App = () => {
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
-      <UseEffectTest />
     </div>
   );
 };
