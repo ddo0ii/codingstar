@@ -6,7 +6,7 @@ function UseEffectTest() {
 
   useEffect(() => {
     console.log("useEffect!!", count);
-  });
+  }, []);
   return (
     <div>
       <p>{count}번 클릭!</p>
